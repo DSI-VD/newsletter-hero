@@ -1,12 +1,8 @@
 # Newsletter
 
-Les cas Jira se référant à la mise ne place de la newsletter est le [CCWEB-6971](http://issuetracker.etat-de-vaud.ch/outils/jira/browse/CCWEB-6971)
+For more information about this project, visit Jira issue  [CCWEB-6971](http://issuetracker.etat-de-vaud.ch/outils/jira/browse/CCWEB-6971) (internal use).
 
-## Pre requis
-
-Voici les logiciels nécéssaire afin de générer la newsletter
-
-1. npm: `$ brew install node`
+:point_right: [The newsletter is viewable here](http://vdch.github.io/newsletter-hero/). :point_left:
 
 ## Build
 
@@ -16,7 +12,7 @@ Voici les logiciels nécéssaire afin de générer la newsletter
 
 to publish on 'gh-pages': '$ grunt publish'
 
-## Installation de la newsletter
+## Installation de la newsletter (in french)
 
 1. Créer un *sysfolder*
     1. Dans les propriétées de la page, utiliser le template *Newsletter Hero*
@@ -34,7 +30,9 @@ to publish on 'gh-pages': '$ grunt publish'
         * ID of the page where to unsubscribe: `lib.idToUnsubscribe`
     1. Dans le champs *Setup* ajouter `<INCLUDE_TYPOSCRIPT:source="FILE:fileadmin/templates/extensions/direct_mail/hero-email-template/typoscript/setup.ts">`
 
-## Les différents code
+## TYPO3 configuration
+
+Here are the differents setups to enable the design on TYPO3.
 
 ### Constants
 
