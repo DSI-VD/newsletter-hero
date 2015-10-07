@@ -1,4 +1,4 @@
-# Newsletter
+# Newsletter-hero
 
 For more information about this project, visit Jira issue  [CCWEB-6971](http://issuetracker.etat-de-vaud.ch/outils/jira/browse/CCWEB-6971) (internal use).
 
