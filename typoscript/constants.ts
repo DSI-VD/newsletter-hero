@@ -19,13 +19,6 @@ lib.idToUnsubscribe = 5772
 
 # Base URL
 lib.baseUrl = http://www.vd.ch/
-[globalString = ENV:HTTP_HOST=valid-typo3.vd.ch]
-lib.baseUrl = http://valid-typo3.vd.ch/
-[globalString = ENV:HTTP_HOST=integration-typo3.etat-de-vaud.ch]
-lib.baseUrl = http://integration-typo3.etat-de-vaud.ch/
-[globalString = ENV:HTTP_HOST=formation-typo3.etat-de-vaud.ch]
-lib.baseUrl = http://formation-typo3.etat-de-vaud.ch/
-[GLOBAL]
 
 # Title level of content elements
 content.defaultHeaderType = 2
