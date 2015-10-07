@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             options: {
             },
             files: {
-                'hero.html': 'hero-clean.html'
+                'dist/index.html': 'src/hero.html'
             }
         }
     }

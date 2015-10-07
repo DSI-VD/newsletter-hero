@@ -3,3 +3,6 @@
 
 # Ignore node packages
 node_modules
+
+# Ignore distribution
+dist
