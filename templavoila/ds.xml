@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+  <meta type="array">
+    <langDisable>1</langDisable>
+  </meta>
+  <ROOT type="array">
+    <tx_templavoila type="array">
+      <title>ROOT</title>
+      <description>Sélectionner dans la page l'élément HTML qui doit être le conteneur principal pour le gabarit.</description>
+    </tx_templavoila>
+    <type>array</type>
+    <el type="array">
+      <field_content type="array">
+        <tx_templavoila type="array">
+          <title>Content</title>
+          <description>Contenu de la page</description>
+          <sample_data type="array">
+            <numIndex index="0">Lorem lipsum</numIndex>
+          </sample_data>
+          <eType>ce</eType>
+          <TypoScript><![CDATA[ 10= RECORDS
+  10.source.current=1
+  10.tables = tt_content
+  10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->
+                    ]]></TypoScript>
+          <oldStyleColumnNumber>0</oldStyleColumnNumber>
+          <tags>div:outer</tags>
+          <proc type="array">
+            <int>0</int>
+            <HSC>0</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <enableDragDrop>0</enableDragDrop>
+        </tx_templavoila>
+        <TCEforms type="array">
+          <config type="array">
+            <type>group</type>
+            <internal_type>db</internal_type>
+            <allowed>tt_content</allowed>
+            <size>5</size>
+            <maxitems>200</maxitems>
+            <minitems>0</minitems>
+            <multiple>1</multiple>
+            <show_thumbs>1</show_thumbs>
+          </config>
+          <label>Content</label>
+        </TCEforms>
+      </field_content>
+      <field_title type="array">
+        <tx_templavoila type="array">
+          <title>Titre</title>
+          <description>Titre de la page</description>
+          <sample_data type="array">
+            <numIndex index="0">Titre</numIndex>
+          </sample_data>
+          <eType>TypoScriptObject</eType>
+          <tags>h1:outer</tags>
+          <proc type="array">
+            <int>0</int>
+            <HSC>0</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <TypoScriptObjPath>lib.title</TypoScriptObjPath>
+        </tx_templavoila>
+      </field_title>
+      <field_lead type="array">
+        <tx_templavoila type="array">
+          <title>Introduction</title>
+          <sample_data type="array">
+            <numIndex index="0">Introduction</numIndex>
+          </sample_data>
+          <eType>input</eType>
+          <tags>p:inner</tags>
+          <proc type="array">
+            <HSC>1</HSC>
+            <stdWrap></stdWrap>
+            <int>0</int>
+          </proc>
+          <preview></preview>
+          <TypoScript type="NULL"></TypoScript>
+        </tx_templavoila>
+        <TCEforms type="array">
+          <label>Introduction</label>
+          <config type="array">
+            <type>input</type>
+            <size>48</size>
+            <eval>trim</eval>
+          </config>
+        </TCEforms>
+      </field_lead>
+      <field_footer_left_title type="array">
+        <tx_templavoila type="array">
+          <title>Titre du pied de page de gauche</title>
+          <description>Titre du pied de page de gauche</description>
+          <sample_data type="array">
+            <numIndex index="0">Titre du pied de page de gauche</numIndex>
+          </sample_data>
+          <eType>input</eType>
+          <tags>h5:inner</tags>
+          <proc type="array">
+            <HSC type="integer">1</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <TypoScript type="NULL"></TypoScript>
+        </tx_templavoila>
+        <TCEforms type="array">
+          <label>Titre du pied de page de gauche</label>
+          <config type="array">
+            <type>input</type>
+            <size>48</size>
+            <eval>trim</eval>
+          </config>
+        </TCEforms>
+      </field_footer_left_title>
+      <field_footer_left_content type="array">
+        <tx_templavoila type="array">
+          <title>Contenu du pied de page de gauche</title>
+          <description>Contenu du pied de page de gauche</description>
+          <sample_data type="array">
+            <numIndex index="0">Contenu du pied de page de gauche</numIndex>
+          </sample_data>
+          <eType>text</eType>
+          <tags>p:inner</tags>
+          <TypoScript></TypoScript>
+          <proc type="array">
+            <HSC type="integer">1</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+        </tx_templavoila>
+        <TCEforms type="array">
+          <label>Contenu du pied de page de gauche</label>
+          <config type="array">
+            <type>text</type>
+            <cols>48</cols>
+            <rows>5</rows>
+          </config>
+        </TCEforms>
+      </field_footer_left_content>
+      <field_footer_right_title type="array">
+        <tx_templavoila type="array">
+          <title>Titre du pied de page de droite</title>
+          <description>Titre du pied de page de droite</description>
+          <sample_data type="array">
+            <numIndex index="0">Titre du pied de page de droite</numIndex>
+          </sample_data>
+          <eType>input</eType>
+          <tags>h5:inner</tags>
+          <proc type="array">
+            <HSC type="integer">1</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <TypoScript type="NULL"></TypoScript>
+        </tx_templavoila>
+        <TCEforms type="array">
+          <label>Titre du pied de page de droite</label>
+          <config type="array">
+            <type>input</type>
+            <size>48</size>
+            <eval>trim</eval>
+          </config>
+        </TCEforms>
+      </field_footer_right_title>
+      <field_footer_right_content type="array">
+        <tx_templavoila type="array">
+          <title>Contenu du pied de page de droite</title>
+          <description>Contenu du pied de page de droite</description>
+          <sample_data type="array">
+            <numIndex index="0">Contenu du pied de page de droite</numIndex>
+          </sample_data>
+          <eType>text</eType>
+          <tags>p:inner</tags>
+          <TypoScript></TypoScript>
+          <proc type="array">
+            <HSC type="integer">1</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+        </tx_templavoila>
+        <TCEforms type="array">
+          <label>Contenu du pied de page de droite</label>
+          <config type="array">
+            <type>text</type>
+            <cols>48</cols>
+            <rows>5</rows>
+          </config>
+        </TCEforms>
+      </field_footer_right_content>
+      <field_logo_department type="array">
+        <tx_templavoila type="array">
+          <title>Nom du département</title>
+          <description>Nom du département</description>
+          <sample_data type="array">
+            <numIndex index="0">Nom du département</numIndex>
+          </sample_data>
+          <eType>TypoScriptObject</eType>
+          <tags>strong:inner</tags>
+          <proc type="array">
+            <int>0</int>
+            <HSC>0</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <TypoScriptObjPath>lib.logo.department</TypoScriptObjPath>
+        </tx_templavoila>
+      </field_logo_department>
+      <field_logo_service type="array">
+        <tx_templavoila type="array">
+          <title>Nom du service</title>
+          <description>Nom du service</description>
+          <sample_data type="array">
+            <numIndex index="0">Nom du service</numIndex>
+          </sample_data>
+          <eType>TypoScriptObject</eType>
+          <tags>span:inner</tags>
+          <proc type="array">
+            <int>0</int>
+            <HSC>0</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <TypoScriptObjPath>lib.logo.service</TypoScriptObjPath>
+        </tx_templavoila>
+      </field_logo_service>
+      <field_header_text type="array">
+        <tx_templavoila type="array">
+          <title>Texte de l'en-tête</title>
+          <description>Texte de l'en-tête</description>
+          <sample_data type="array">
+            <numIndex index="0">Texte de l'en-tête</numIndex>
+          </sample_data>
+          <eType>input</eType>
+          <tags>h6:inner</tags>
+          <proc type="array">
+            <HSC type="integer">1</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <TypoScript type="NULL"></TypoScript>
+        </tx_templavoila>
+        <TCEforms type="array">
+          <label>Texte de l'en-tête</label>
+          <config type="array">
+            <type>input</type>
+            <size>48</size>
+            <eval>trim</eval>
+          </config>
+        </TCEforms>
+      </field_header_text>
+      <field_footer_link type="array">
+        <tx_templavoila type="array">
+          <title>Liens de pied de page</title>
+          <description>Liens de pied de page</description>
+          <sample_data type="array">
+            <numIndex index="0">Liens de pied de page</numIndex>
+          </sample_data>
+          <eType>TypoScriptObject</eType>
+          <tags>p:inner</tags>
+          <proc type="array">
+            <int>0</int>
+            <HSC>0</HSC>
+            <stdWrap></stdWrap>
+          </proc>
+          <preview></preview>
+          <TypoScriptObjPath>lib.footer.links</TypoScriptObjPath>
+        </tx_templavoila>
+      </field_footer_link>
+    </el>
+  </ROOT>
+</T3DataStructure>
