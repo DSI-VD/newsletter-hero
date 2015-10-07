@@ -14,6 +14,8 @@ Voici les logiciels nécéssaire afin de générer la newsletter
     $ sudo npm install
     $ grunt
 
+to publish on 'gh-pages': '$ grunt publish'
+
 ## Installation de la newsletter
 
 1. Créer un *sysfolder*
